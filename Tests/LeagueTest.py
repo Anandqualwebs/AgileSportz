@@ -29,33 +29,33 @@ class LeagueTest(EnvironmentSetup):
         League.click_add_submit_button()
         time.sleep(2)
 
-    # def test_2_print_league_names(self):
-    #     driver = self.driver
-    #     League = LeaguePage(driver)
-    #     League.click_league_tab()
-    #     time.sleep(2)
-    #     League.print_league_names()
-    #
-    # def test_3_print_league_admin_names(self):
-    #     driver = self.driver
-    #     League = LeaguePage(driver)
-    #     League.click_league_tab()
-    #     time.sleep(2)
-    #     League.print_league_admin_names()
-    #
-    # def test_4_print_league_team_number(self):
-    #     driver = self.driver
-    #     League = LeaguePage(driver)
-    #     League.click_league_tab()
-    #     time.sleep(2)
-    #     League.print_league_team_number()
-    #
-    # def test_5_print_league_number_of_games(self):
-    #     driver = self.driver
-    #     League = LeaguePage(driver)
-    #     League.click_league_tab()
-    #     time.sleep(2)
-    #     League.print_number_of_games()
+    def test_2_print_league_names(self):
+        driver = self.driver
+        League = LeaguePage(driver)
+        League.click_league_tab()
+        time.sleep(2)
+        League.print_league_names()
+
+    def test_3_print_league_admin_names(self):
+        driver = self.driver
+        League = LeaguePage(driver)
+        League.click_league_tab()
+        time.sleep(2)
+        League.print_league_admin_names()
+
+    def test_4_print_league_team_number(self):
+        driver = self.driver
+        League = LeaguePage(driver)
+        League.click_league_tab()
+        time.sleep(2)
+        League.print_league_team_number()
+
+    def test_5_print_league_number_of_games(self):
+        driver = self.driver
+        League = LeaguePage(driver)
+        League.click_league_tab()
+        time.sleep(2)
+        League.print_number_of_games()
 
 
 

@@ -54,7 +54,10 @@ class LoginTest(unittest.TestCase):
         login.click_login()
         time.sleep(1)
         login.valid_Credential_text()
-
+        login.click_profile_icon()
+        login.click_profile_icon()
+        login.click_logout()
+        time.sleep(2)
 
     @classmethod
     def tearDownClass(inst):

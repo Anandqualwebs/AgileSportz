@@ -14,6 +14,9 @@ class Loginpage():
         self.login_button_xpath = locators.login_button_xpath
         self.Invalid_Credential_text_xpath = locators.Invalid_Credential_text_xpath
         self.valid_Credential_text_xpath = locators.valid_Credential_text_xpath
+        self.profile_icon_xpath = locators.profile_icon_xpath
+        self.logout_linktext = locators.logout_linktext
+
 
     def enter_email(self, email):
         self.driver.find_element_by_xpath(self.email_textbox_xpath).clear()
@@ -37,8 +40,11 @@ class Loginpage():
         except Exception as e:
             print("Logged in = Failed")
 
+    def click_profile_icon(self):
+        self.driver.find_element_by_xpath(self.profile_icon_xpath).click()
 
-
+    def click_logout(self):
+        self.driver.find_element_by_link_text(self.logout_linktext).click()
 
 
 

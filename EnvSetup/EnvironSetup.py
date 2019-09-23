@@ -25,7 +25,12 @@ class EnvironmentSetup(unittest.TestCase):
         login.enter_email(inst.correct_email)
         login.enter_password(inst.correct_password)
         login.click_login()
-        time.sleep(1)
+        time.sleep(2)
+        # login.click_profile_icon()
+        # login.click_profile_icon()
+        # time.sleep(2)
+        # login.click_logout()
+        # time.sleep(2)
 
     @classmethod
     def tearDownClass(inst):
